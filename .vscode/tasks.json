@@ -6,12 +6,12 @@
 			"label": "docker-build",
 			"platform": "node",
 			"dockerBuild": {
-				"dockerfile": "${workspaceFolder}/Hands-on lab/lab-files/node_modules/@babel/core/Dockerfile",
-				"context": "${workspaceFolder}/Hands-on lab/lab-files/node_modules/@babel/core",
+				"dockerfile": "${workspaceFolder}/Hands-on lab/lab-files/node_modules/is-docker/Dockerfile",
+				"context": "${workspaceFolder}/Hands-on lab/lab-files/node_modules/is-docker",
 				"pull": true
 			},
 			"node": {
-				"package": "${workspaceFolder}/Hands-on lab/lab-files/node_modules/@babel/core/package.json"
+				"package": "${workspaceFolder}/Hands-on lab/lab-files/node_modules/is-docker/package.json"
 			}
 		},
 		{
@@ -22,7 +22,7 @@
 			],
 			"platform": "node",
 			"node": {
-				"package": "${workspaceFolder}/Hands-on lab/lab-files/node_modules/@babel/core/package.json"
+				"package": "${workspaceFolder}/Hands-on lab/lab-files/node_modules/is-docker/package.json"
 			}
 		},
 		{
@@ -38,7 +38,7 @@
 				}
 			},
 			"node": {
-				"package": "${workspaceFolder}/Hands-on lab/lab-files/node_modules/@babel/core/package.json",
+				"package": "${workspaceFolder}/Hands-on lab/lab-files/node_modules/is-docker/package.json",
 				"enableDebugging": true
 			}
 		}
