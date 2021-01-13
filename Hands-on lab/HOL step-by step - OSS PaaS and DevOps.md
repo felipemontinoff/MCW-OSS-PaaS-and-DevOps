@@ -402,9 +402,9 @@ In this task, you create the collections needed for your database migration and 
 
    ![The New Collection button is highlighted on the Cosmos DB Collections blade.](media/cosmos-db-new-collection.png "New Collection")
 
-5. On the Add Collection dialog, enter the following: 
+5. On the Add Collection dialog, enter the following:
 
->**Change #02:** Sharding definition is now required: for "users" collections you can use  "postalCode". For "plans" you can use "portionSize"
+>**Change #02:** Sharding definition is now required: for "users" collections you can use  "postalCode". For "plans" you can use "portionSize".
 
    - **Database id**: Select **Use existing** and select the **best-for-you-organics** database from the list.
    - **Collection id**: Enter **users**.
@@ -993,8 +993,6 @@ In this task, you create an SSH tunnel to the Jenkins server and configure it fo
 
 6. To set up an SSH tunnel to Jenkins, copy the ssh command provided in the Jenkins on Azure window, as highlighted in the screenshot below.
 
-   ![The ssh command that Jenkins provides is highlighted in the Jenkins on Azure window.](media/jenkins-on-azure.png "Jenkins On Azure window")
-
 7. Open a new bash shell, and at the command prompt paste the copied ssh command, replacing "username" with **jenkinsadmin**. The command will resemble the following:
 
 >**Change #08**: Again the user here could be *bitnami*.
@@ -1044,6 +1042,8 @@ In this task, you create an SSH tunnel to the Jenkins server and configure it fo
 18. Locate and select the **GitHub** plugin.
 
     ![The GitHub plugin is checked.](media/jenkins-plugins-github-checked.png "GitHub plugin")
+
+>**Note**: The text bellow the plugin is: *"This plugin integrates GitHub to Jenkins"*.
 
 19. Select **Install without restart**.
 
@@ -1256,7 +1256,7 @@ In this task, you install Docker CE on your Jenkins VM, so it can be used to bui
 
 >**Change #11:** We can restart Jenkins via Web, or via command line. 
     ```bash
-    sudo servicce bitnami restart
+    sudo service bitnami restart
     #service jenkins restart this way is not supported.
     tail -f /opt/bitnami/jenkins/jenkins.logs
     ```
@@ -1725,13 +1725,15 @@ In this task, you create a new Logic App, which uses the Outlook.com connector t
 
      - **To**: Add an e-mail that you have access.
      - **Subject**: You can write something creative and then Click in the box, select **Add Dynamic content**, and then select the **orderId** property.
-    - **Body**: Write some message on the e-mail body.
+     - **Body**: Write some message on the e-mail body.
   
     ![See more is highlighted under Parse JSON in the dynamic content dialog.](media/logic-app-dynamic-content-see-more-new.png "Dynamic content")
 
 19. Save and check your the e-mail box you have configured.
 
 20. To disable the Logic App you can use the Azure Portal, or if you cleanup the Storage queue.
+  
+     ![See how to disable Logic App.](media/disable-logic-app.png "Logic App Disable")
 
 ## After the hands-on lab
 
